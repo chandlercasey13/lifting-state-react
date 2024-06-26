@@ -1,6 +1,7 @@
 // `src/components/BurgerStack.jsx`
 const BurgerStack = ({ myBurgerToppings, removeFromBurger }) => {
   return (
+    <div className ='burger-cards'>
     <ul>
       {myBurgerToppings.map((myBurgerTopping, index) => (
         <li
@@ -19,6 +20,7 @@ const BurgerStack = ({ myBurgerToppings, removeFromBurger }) => {
         </li>
       ))}
     </ul>
+    </div>
   );
 };
 
